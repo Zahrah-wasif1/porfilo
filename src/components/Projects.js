@@ -9,7 +9,7 @@ const Projects = () => {
       title: 'E-Commerce Platform',
       description: 'A full-stack e-commerce platform with user authentication, product management, and payment integration.',
       technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&q=80',
+      image: 'https://images.unsplash.com/photo-1556740758-90de374c12ad?w=800&h=600&fit=crop&q=80',
       github: 'https://github.com',
       live: 'https://example.com'
     },
@@ -18,7 +18,7 @@ const Projects = () => {
       title: 'Task Management App',
       description: 'A collaborative task management application with real-time updates and team collaboration features.',
       technologies: ['React', 'Firebase', 'Material-UI'],
-      image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&h=600&fit=crop&q=80',
+      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop&q=80',
       github: 'https://github.com',
       live: 'https://example.com'
     },
@@ -27,7 +27,7 @@ const Projects = () => {
       title: 'Weather Dashboard',
       description: 'A beautiful weather dashboard that provides real-time weather information and forecasts.',
       technologies: ['React', 'API Integration', 'CSS3'],
-      image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&h=600&fit=crop&q=80',
+      image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&h=600&fit=crop&q=80',
       github: 'https://github.com',
       live: 'https://example.com'
     },
@@ -36,7 +36,7 @@ const Projects = () => {
       title: 'Social Media Dashboard',
       description: 'An analytics dashboard for social media metrics with data visualization and insights.',
       technologies: ['React', 'Chart.js', 'Node.js'],
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&q=80',
+      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&q=80',
       github: 'https://github.com',
       live: 'https://example.com'
     },
@@ -54,7 +54,7 @@ const Projects = () => {
       title: 'Blog Platform',
       description: 'A content management system for blogging with rich text editing and comment features.',
       technologies: ['React', 'Node.js', 'MongoDB'],
-      image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop&q=80',
+      image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&h=600&fit=crop&q=80',
       github: 'https://github.com',
       live: 'https://example.com'
     }
