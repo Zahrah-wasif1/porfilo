@@ -9,7 +9,7 @@ const Projects = () => {
       title: 'E-Commerce Platform',
       description: 'A full-stack e-commerce platform with user authentication, product management, and payment integration.',
       technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
-      image: '/project-1.jpg',
+      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&q=80',
       github: 'https://github.com',
       live: 'https://example.com'
     },
@@ -18,7 +18,7 @@ const Projects = () => {
       title: 'Task Management App',
       description: 'A collaborative task management application with real-time updates and team collaboration features.',
       technologies: ['React', 'Firebase', 'Material-UI'],
-      image: '/project-2.jpg',
+      image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&h=600&fit=crop&q=80',
       github: 'https://github.com',
       live: 'https://example.com'
     },
@@ -27,7 +27,7 @@ const Projects = () => {
       title: 'Weather Dashboard',
       description: 'A beautiful weather dashboard that provides real-time weather information and forecasts.',
       technologies: ['React', 'API Integration', 'CSS3'],
-      image: '/project-3.jpg',
+      image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&h=600&fit=crop&q=80',
       github: 'https://github.com',
       live: 'https://example.com'
     },
@@ -36,7 +36,7 @@ const Projects = () => {
       title: 'Social Media Dashboard',
       description: 'An analytics dashboard for social media metrics with data visualization and insights.',
       technologies: ['React', 'Chart.js', 'Node.js'],
-      image: '/project-4.jpg',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&q=80',
       github: 'https://github.com',
       live: 'https://example.com'
     },
@@ -45,7 +45,7 @@ const Projects = () => {
       title: 'Portfolio Website',
       description: 'A modern, responsive portfolio website showcasing projects and professional experience.',
       technologies: ['React', 'CSS3', 'Responsive Design'],
-      image: '/project-5.jpg',
+      image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop&q=80',
       github: 'https://github.com',
       live: 'https://example.com'
     },
@@ -54,7 +54,7 @@ const Projects = () => {
       title: 'Blog Platform',
       description: 'A content management system for blogging with rich text editing and comment features.',
       technologies: ['React', 'Node.js', 'MongoDB'],
-      image: '/project-6.jpg',
+      image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop&q=80',
       github: 'https://github.com',
       live: 'https://example.com'
     }
@@ -77,8 +77,9 @@ const Projects = () => {
                 <img 
                   src={project.image} 
                   alt={project.title}
+                  loading="lazy"
                   onError={(e) => {
-                    e.target.src = `https://via.placeholder.com/400x300/ff6b6b/ffffff?text=${encodeURIComponent(project.title)}`;
+                    e.target.src = `https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop&q=80`;
                   }}
                 />
                 <div className="project-overlay">
