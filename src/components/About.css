@@ -1,6 +1,6 @@
 .about {
   padding: 100px 0;
-  background: var(--bg-white);
+  background: var(--bg-dark);
 }
 
 .about .container {
@@ -13,7 +13,7 @@
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: var(--text-dark);
+  color: var(--text-light);
   display: flex;
   align-items: center;
   gap: 15px;
@@ -27,7 +27,7 @@
 
 .section-subtitle {
   font-size: 18px;
-  color: var(--text-light);
+  color: var(--text-gray);
   margin-bottom: 50px;
   max-width: 600px;
 }
@@ -42,7 +42,7 @@
 .about-text {
   font-size: 18px;
   line-height: 1.8;
-  color: var(--text-light);
+  color: var(--text-gray);
 }
 
 .about-text p {
@@ -59,28 +59,34 @@
 .highlight-item {
   text-align: center;
   padding: 25px;
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  background: var(--bg-card);
   border-radius: 15px;
   transition: var(--transition);
+  border: 1px solid var(--border-color);
 }
 
 .highlight-item:hover {
   transform: translateY(-5px);
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-color);
+  background: linear-gradient(135deg, rgba(255, 107, 107, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%);
 }
 
 .highlight-number {
   display: block;
   font-size: 36px;
   font-weight: 700;
-  color: var(--primary-color);
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--purple-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 8px;
 }
 
 .highlight-label {
   display: block;
   font-size: 14px;
-  color: var(--text-light);
+  color: var(--text-gray);
   font-weight: 500;
 }
 
@@ -100,10 +106,12 @@
 .image-border {
   width: 100%;
   height: 100%;
-  border: 5px solid var(--primary-color);
+  border: 5px solid transparent;
   border-radius: 20px;
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  background: linear-gradient(135deg, var(--primary-color), var(--purple-accent), var(--blue-accent)) padding-box,
+              linear-gradient(135deg, var(--primary-color), var(--purple-accent), var(--blue-accent)) border-box;
   position: relative;
+  box-shadow: var(--shadow-xl);
 }
 
 .image-border::before {
@@ -113,7 +121,7 @@
   right: -15px;
   width: 100%;
   height: 100%;
-  border: 5px solid var(--secondary-color);
+  border: 5px solid var(--green-accent);
   border-radius: 20px;
   z-index: -1;
   opacity: 0.5;
@@ -187,4 +195,3 @@
     padding: 20px;
   }
 }
-

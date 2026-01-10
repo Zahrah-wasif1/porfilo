@@ -1,6 +1,6 @@
 .contact {
   padding: 100px 0;
-  background: var(--bg-light);
+  background: var(--bg-darker);
 }
 
 .contact .container {
@@ -35,30 +35,39 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--purple-accent) 100%);
   color: white;
   border-radius: 12px;
   font-size: 20px;
   box-shadow: var(--shadow-md);
+  transition: var(--transition);
+}
+
+.info-icon:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: var(--shadow-lg);
 }
 
 .info-content h3 {
   font-size: 18px;
   font-weight: 600;
-  color: var(--text-dark);
+  color: var(--text-light);
   margin-bottom: 8px;
 }
 
 .info-content a,
 .info-content p {
   font-size: 16px;
-  color: var(--text-light);
+  color: var(--text-gray);
   text-decoration: none;
   transition: var(--transition);
 }
 
 .info-content a:hover {
   color: var(--primary-color);
+  background: linear-gradient(135deg, var(--primary-color), var(--purple-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .contact-social {
@@ -73,27 +82,40 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: white;
+  background: var(--bg-card);
   border-radius: 50%;
-  color: var(--primary-color);
+  color: var(--text-gray);
   font-size: 20px;
   text-decoration: none;
   transition: var(--transition);
   box-shadow: var(--shadow-sm);
+  border: 2px solid var(--border-color);
 }
 
-.social-link:hover {
-  background: var(--primary-color);
+/* LinkedIn - Blue on hover */
+.contact-social a[aria-label="LinkedIn"]:hover {
+  background: linear-gradient(135deg, #0077b5 0%, #00a0dc 100%);
   color: white;
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-md);
+  border-color: #0077b5;
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 119, 181, 0.4);
+}
+
+/* GitHub - Purple on hover */
+.contact-social a[aria-label="GitHub"]:hover {
+  background: linear-gradient(135deg, #6e5494 0%, #8b63c7 100%);
+  color: white;
+  border-color: #6e5494;
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: 0 8px 20px rgba(110, 82, 148, 0.4);
 }
 
 .contact-form {
-  background: white;
+  background: var(--bg-card);
   padding: 40px;
   border-radius: 20px;
   box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
 }
 
 .form-group {
@@ -110,13 +132,20 @@
   border-radius: 10px;
   transition: var(--transition);
   outline: none;
-  background: var(--bg-light);
+  background: var(--bg-darker);
+  color: var(--text-light);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--text-gray);
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   border-color: var(--primary-color);
-  background: white;
+  background: var(--bg-dark);
+  box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.1);
 }
 
 .form-group textarea {
@@ -202,4 +231,3 @@
     font-size: 14px;
   }
 }
-

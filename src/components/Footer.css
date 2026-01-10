@@ -1,8 +1,9 @@
 .footer {
-  background: var(--text-dark);
+  background: var(--bg-darker);
   color: white;
   padding: 40px 0;
   text-align: center;
+  border-top: 1px solid var(--border-color);
 }
 
 .footer .container {
@@ -28,19 +29,19 @@
 
 .footer-text p {
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--text-gray);
   margin: 0;
 }
 
 .heart-icon {
-  color: #ff6b6b;
+  color: var(--primary-color);
   animation: heartbeat 1.5s ease-in-out infinite;
   margin: 0 5px;
 }
 
 .copyright {
   font-size: 14px !important;
-  color: rgba(255, 255, 255, 0.6) !important;
+  color: var(--text-dark) !important;
 }
 
 .footer-social {
@@ -54,26 +55,50 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--bg-card);
   border-radius: 50%;
-  color: white;
+  color: var(--text-gray);
   font-size: 18px;
   text-decoration: none;
   transition: var(--transition);
+  border: 2px solid var(--border-color);
 }
 
-.footer-social-link:hover {
-  background: var(--primary-color);
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-md);
+/* LinkedIn - Blue on hover */
+.footer-social a[aria-label="LinkedIn"]:hover {
+  background: linear-gradient(135deg, #0077b5 0%, #00a0dc 100%);
+  color: white;
+  border-color: #0077b5;
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 119, 181, 0.4);
+}
+
+/* GitHub - Purple on hover */
+.footer-social a[aria-label="GitHub"]:hover {
+  background: linear-gradient(135deg, #6e5494 0%, #8b63c7 100%);
+  color: white;
+  border-color: #6e5494;
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: 0 8px 20px rgba(110, 82, 148, 0.4);
+}
+
+/* Email - Red/Pink on hover */
+.footer-social a[aria-label="Email"]:hover {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--pink-accent) 100%);
+  color: white;
+  border-color: var(--primary-color);
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: 0 8px 20px rgba(255, 107, 107, 0.4);
 }
 
 @keyframes heartbeat {
   0%, 100% {
     transform: scale(1);
+    color: var(--primary-color);
   }
   50% {
     transform: scale(1.1);
+    color: var(--purple-accent);
   }
 }
 
@@ -115,4 +140,3 @@
     font-size: 12px !important;
   }
 }
-

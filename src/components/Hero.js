@@ -69,6 +69,15 @@ const Hero = () => {
           <div className="hero-image">
             <div className="image-wrapper">
               <div className="profile-image">
+                <img 
+                  src="/profile-picture.jpg" 
+                  alt="Zahrah Wasif" 
+                  className="profile-img"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.nextElementSibling.style.display = 'flex';
+                  }}
+                />
                 <div className="image-placeholder">
                   <span>ZW</span>
                 </div>

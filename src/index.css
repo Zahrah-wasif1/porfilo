@@ -5,18 +5,29 @@
 }
 
 :root {
-  --primary-color: #667eea;
-  --secondary-color: #764ba2;
-  --accent-color: #f093fb;
-  --text-dark: #2d3748;
-  --text-light: #718096;
-  --bg-light: #f7fafc;
-  --bg-white: #ffffff;
-  --border-color: #e2e8f0;
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
-  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
-  --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.15);
+  /* Black & Mixed Color Scheme */
+  --primary-color: #ff6b6b;
+  --secondary-color: #4ecdc4;
+  --accent-color: #ffe66d;
+  --purple-accent: #a855f7;
+  --pink-accent: #f093fb;
+  --blue-accent: #4facfe;
+  --green-accent: #43e97b;
+  
+  --bg-dark: #0a0a0a;
+  --bg-darker: #000000;
+  --bg-card: #1a1a1a;
+  --bg-card-hover: #252525;
+  
+  --text-light: #ffffff;
+  --text-gray: #b0b0b0;
+  --text-dark: #666666;
+  
+  --border-color: #333333;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.6);
   --transition: all 0.3s ease;
 }
 
@@ -26,8 +37,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: var(--text-dark);
-  background-color: var(--bg-white);
+  color: var(--text-light);
+  background-color: var(--bg-darker);
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -52,4 +63,3 @@ code {
     padding: 0 15px;
   }
 }
-

@@ -9,7 +9,7 @@ const Projects = () => {
       title: 'E-Commerce Platform',
       description: 'A full-stack e-commerce platform with user authentication, product management, and payment integration.',
       technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
-      image: 'https://via.placeholder.com/400x300/667eea/ffffff?text=E-Commerce',
+      image: '/project-1.jpg',
       github: 'https://github.com',
       live: 'https://example.com'
     },
@@ -18,7 +18,7 @@ const Projects = () => {
       title: 'Task Management App',
       description: 'A collaborative task management application with real-time updates and team collaboration features.',
       technologies: ['React', 'Firebase', 'Material-UI'],
-      image: 'https://via.placeholder.com/400x300/f093fb/ffffff?text=Task+App',
+      image: '/project-2.jpg',
       github: 'https://github.com',
       live: 'https://example.com'
     },
@@ -27,7 +27,7 @@ const Projects = () => {
       title: 'Weather Dashboard',
       description: 'A beautiful weather dashboard that provides real-time weather information and forecasts.',
       technologies: ['React', 'API Integration', 'CSS3'],
-      image: 'https://via.placeholder.com/400x300/4facfe/ffffff?text=Weather',
+      image: '/project-3.jpg',
       github: 'https://github.com',
       live: 'https://example.com'
     },
@@ -36,7 +36,7 @@ const Projects = () => {
       title: 'Social Media Dashboard',
       description: 'An analytics dashboard for social media metrics with data visualization and insights.',
       technologies: ['React', 'Chart.js', 'Node.js'],
-      image: 'https://via.placeholder.com/400x300/43e97b/ffffff?text=Dashboard',
+      image: '/project-4.jpg',
       github: 'https://github.com',
       live: 'https://example.com'
     },
@@ -45,7 +45,7 @@ const Projects = () => {
       title: 'Portfolio Website',
       description: 'A modern, responsive portfolio website showcasing projects and professional experience.',
       technologies: ['React', 'CSS3', 'Responsive Design'],
-      image: 'https://via.placeholder.com/400x300/fa709a/ffffff?text=Portfolio',
+      image: '/project-5.jpg',
       github: 'https://github.com',
       live: 'https://example.com'
     },
@@ -54,7 +54,7 @@ const Projects = () => {
       title: 'Blog Platform',
       description: 'A content management system for blogging with rich text editing and comment features.',
       technologies: ['React', 'Node.js', 'MongoDB'],
-      image: 'https://via.placeholder.com/400x300/fee140/ffffff?text=Blog',
+      image: '/project-6.jpg',
       github: 'https://github.com',
       live: 'https://example.com'
     }
@@ -74,7 +74,13 @@ const Projects = () => {
           {projects.map((project) => (
             <div key={project.id} className="project-card">
               <div className="project-image">
-                <img src={project.image} alt={project.title} />
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  onError={(e) => {
+                    e.target.src = `https://via.placeholder.com/400x300/ff6b6b/ffffff?text=${encodeURIComponent(project.title)}`;
+                  }}
+                />
                 <div className="project-overlay">
                   <a 
                     href={project.github} 

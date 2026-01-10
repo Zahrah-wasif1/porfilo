@@ -48,7 +48,7 @@ const Contact = () => {
               </div>
               <div className="info-content">
                 <h3>Email</h3>
-                <a href="mailto:zahrah.wasif@example.com">zahrah.wasif@example.com</a>
+                <a href="mailto:zahrahwasif@example.com">zahrah.wasif@example.com</a>
               </div>
             </div>
             <div className="info-item">
@@ -57,7 +57,7 @@ const Contact = () => {
               </div>
               <div className="info-content">
                 <h3>Phone</h3>
-                <a href="tel:+923001234567">+92 300 1234567</a>
+                <a href="tel:+923294238189">+92 329 4238189</a>
               </div>
             </div>
             <div className="info-item">
