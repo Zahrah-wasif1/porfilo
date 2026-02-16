@@ -10,7 +10,7 @@ const Projects = () => {
     description:
       'A secure and scalable backend system for a real-time Domino game. Handles gameplay logic, user authentication, match management, wallet transactions, and database operations.',
     technologies: ['Node.js', 'Express.js', 'MongoDB', 'JWT', 'Socket.io'],
-    image: '/images/domino.jpg', // apni project image lagana
+    image: '/images/domino-game.png',
     github: 'https://github.com/Zahrah-wasif1',
     live: ''
   },
@@ -20,7 +20,7 @@ const Projects = () => {
     description:
       'A gaming platform backend developed using NestJS with Firebase integration. Implements authentication, real-time features, and scalable modular architecture.',
     technologies: ['NestJS', 'Firebase', 'Node.js', 'REST API'],
-    image: '/images/brawl.jpg',
+    image: '/images/brawl-platform.png',
     github: 'https://github.com/Zahrah-wasif1',
     live: ''
   },
@@ -30,7 +30,7 @@ const Projects = () => {
     description:
       'Backend system for managing security operations, visitors, and staff. Built RESTful APIs using Node.js, Express.js, and MongoDB with secure authentication and role-based access.',
     technologies: ['Node.js', 'Express.js', 'MongoDB', 'JWT', 'MVC Architecture'],
-    image: '/images/guardhouse.jpg',
+    image: '/images/guardhouse-system.png',
     github: 'https://github.com/Zahrah-wasif1',
     live: ''
   }
