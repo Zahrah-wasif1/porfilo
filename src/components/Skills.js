@@ -5,7 +5,7 @@ import './Skills.css';
 
 const Skills = () => {
   const skills = [
-    { name: 'React', icon: <FaReact />, level: 90 },
+    { name: 'React', icon: <FaReact />, level: 60 },
     { name: 'JavaScript', icon: <FaJs />, level: 85 },
     { name: 'HTML5', icon: <FaHtml5 />, level: 95 },
     { name: 'CSS3', icon: <FaCss3Alt />, level: 90 },
@@ -16,7 +16,7 @@ const Skills = () => {
     { name: 'Python', icon: <SiPython />, level: 70 },
     { name: 'Git', icon: <FaGitAlt />, level: 85 },
     { name: 'Figma', icon: <FaFigma />, level: 80 },
-    { name: 'Bootstrap', icon: <SiBootstrap />, level: 85 },
+    { name: 'Bootstrap', icon: <SiBootstrap />, level: 65 },
     { name: 'Tailwind CSS', icon: <SiTailwindcss />, level: 85 },
   ];
 
