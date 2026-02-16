@@ -4,62 +4,37 @@ import './Projects.css';
 
 const Projects = () => {
   const projects = [
-    {
-      id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce platform with user authentication, product management, and payment integration.',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
-      image: 'https://images.unsplash.com/photo-1556740758-90de374c12ad?w=800&h=600&fit=crop&q=80',
-      github: 'https://github.com',
-      live: 'https://example.com'
-    },
-    {
-      id: 2,
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates and team collaboration features.',
-      technologies: ['React', 'Firebase', 'Material-UI'],
-      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop&q=80',
-      github: 'https://github.com',
-      live: 'https://example.com'
-    },
-    {
-      id: 3,
-      title: 'Weather Dashboard',
-      description: 'A beautiful weather dashboard that provides real-time weather information and forecasts.',
-      technologies: ['React', 'API Integration', 'CSS3'],
-      image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&h=600&fit=crop&q=80',
-      github: 'https://github.com',
-      live: 'https://example.com'
-    },
-    {
-      id: 4,
-      title: 'Social Media Dashboard',
-      description: 'An analytics dashboard for social media metrics with data visualization and insights.',
-      technologies: ['React', 'Chart.js', 'Node.js'],
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&q=80',
-      github: 'https://github.com',
-      live: 'https://example.com'
-    },
-    {
-      id: 5,
-      title: 'Portfolio Website',
-      description: 'A modern, responsive portfolio website showcasing projects and professional experience.',
-      technologies: ['React', 'CSS3', 'Responsive Design'],
-      image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop&q=80',
-      github: 'https://github.com',
-      live: 'https://example.com'
-    },
-    {
-      id: 6,
-      title: 'Blog Platform',
-      description: 'A content management system for blogging with rich text editing and comment features.',
-      technologies: ['React', 'Node.js', 'MongoDB'],
-      image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&h=600&fit=crop&q=80',
-      github: 'https://github.com',
-      live: 'https://example.com'
-    }
-  ];
-
+  {
+    id: 1,
+    title: 'Domino Game Backend',
+    description:
+      'A secure and scalable backend system for a real-time Domino game. Handles gameplay logic, user authentication, match management, wallet transactions, and database operations.',
+    technologies: ['Node.js', 'Express.js', 'MongoDB', 'JWT', 'Socket.io'],
+    image: '/images/domino.jpg', // apni project image lagana
+    github: 'https://github.com/Zahrah-wasif1',
+    live: ''
+  },
+  {
+    id: 2,
+    title: 'Brawl Gaming Platform',
+    description:
+      'A gaming platform backend developed using NestJS with Firebase integration. Implements authentication, real-time features, and scalable modular architecture.',
+    technologies: ['NestJS', 'Firebase', 'Node.js', 'REST API'],
+    image: '/images/brawl.jpg',
+    github: 'https://github.com/Zahrah-wasif1',
+    live: ''
+  },
+  {
+    id: 3,
+    title: 'Guard House Management System',
+    description:
+      'Backend system for managing security operations, visitors, and staff. Built RESTful APIs using Node.js, Express.js, and MongoDB with secure authentication and role-based access.',
+    technologies: ['Node.js', 'Express.js', 'MongoDB', 'JWT', 'MVC Architecture'],
+    image: '/images/guardhouse.jpg',
+    github: 'https://github.com/Zahrah-wasif1',
+    live: ''
+  }
+];
   return (
     <section id="projects" className="projects">
       <div className="container">
