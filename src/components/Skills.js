@@ -17,7 +17,7 @@ const Skills = () => {
     { name: 'Git', icon: <FaGitAlt />, level: 85 },
     { name: 'Figma', icon: <FaFigma />, level: 80 },
     { name: 'Bootstrap', icon: <SiBootstrap />, level: 65 },
-    { name: 'Tailwind CSS', icon: <SiTailwindcss />, level: 85 },
+    { name: 'Tailwind CSS', icon: <SiTailwindcss />, level: 70 },
   ];
 
   return (
