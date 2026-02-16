@@ -12,18 +12,22 @@ const About = () => {
         <div className="about-content">
           <div className="about-text">
             <p>
-              Hello! I'm Zahrah Wasif, a passionate developer and designer based in Pakistan. 
-              I enjoy creating things that live on the internet, whether that be websites, 
-              applications, or anything in between.
-            </p>
-            <p>
-              My goal is to always build products that provide pixel-perfect, performant experiences 
-              while delivering innovative solutions to complex problems.
-            </p>
-            <p>
-              I have experience working with modern web technologies and frameworks, and I'm always 
-              eager to learn new tools and techniques to stay ahead in the ever-evolving tech landscape.
-            </p>
+  Hello! I'm Zahrah Wasif, a dedicated Backend Developer based in Lahore, Pakistan. 
+  I specialize in building secure, scalable, and high-performance server-side applications 
+  using Node.js, Express.js, and NestJS.
+</p>
+<p>
+  I have hands-on experience designing RESTful APIs, implementing authentication and 
+  authorization systems using JWT and bcrypt, and managing databases including MongoDB, 
+  MySQL, and PostgreSQL. I focus on writing clean, maintainable code and structuring 
+  backend systems using the MVC architecture pattern.
+</p>
+<p>
+  Currently, I am working as a Backend Developer at Creative Code Tech, where I develop 
+  production-ready backend services, optimize database queries, and ensure seamless 
+  frontend–backend integration. I am passionate about backend architecture, data security, 
+  and continuously improving my technical skills to build robust and efficient systems.
+</p>
             <div className="about-highlights">
               <div className="highlight-item">
                 <span className="highlight-number">50+</span>
